@@ -752,7 +752,7 @@ AR Path="/5C733CDF/5C883A69" Ref="R?"  Part="1"
 AR Path="/5C733D1A/5C883A69" Ref="R?"  Part="1" 
 F 0 "R103" H 9109 4146 50  0000 L CNN
 F 1 "1m" H 9109 4055 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 9050 4100 50  0001 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 9050 4100 50  0001 C CNN
 F 3 "~" H 9050 4100 50  0001 C CNN
 	1    9050 4100
 	1    0    0    -1  
@@ -1286,7 +1286,7 @@ AR Path="/5C733CDF/5C96BAD1" Ref="J?"  Part="1"
 AR Path="/5C96BAD1" Ref="J104"  Part="1" 
 F 0 "J104" H 3906 4487 50  0000 C CNN
 F 1 "Conn_01x01_Male" V 3951 4440 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3800 4400 50  0001 C CNN
+F 2 "connectors:pad_circ_0.6mm" H 3800 4400 50  0001 C CNN
 F 3 "~" H 3800 4400 50  0001 C CNN
 	1    3800 4400
 	1    0    0    -1  
@@ -1301,7 +1301,7 @@ AR Path="/5C733CDF/5C96BBCF" Ref="J?"  Part="1"
 AR Path="/5C96BBCF" Ref="J105"  Part="1" 
 F 0 "J105" H 3772 4477 50  0000 R CNN
 F 1 "Conn_01x01_Male" V 3951 4540 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3800 4500 50  0001 C CNN
+F 2 "connectors:pad_circ_0.6mm" H 3800 4500 50  0001 C CNN
 F 3 "~" H 3800 4500 50  0001 C CNN
 	1    3800 4500
 	1    0    0    -1  
@@ -1320,4 +1320,30 @@ Wire Wire Line
 Wire Wire Line
 	4050 4300 4750 4300
 NoConn ~ 4750 3200
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C86BF39
+P 3800 4600
+AR Path="/5C733D1A/5C86BF39" Ref="J?"  Part="1" 
+AR Path="/5C732117/5C86BF39" Ref="J?"  Part="1" 
+AR Path="/5C733CDF/5C86BF39" Ref="J?"  Part="1" 
+AR Path="/5C86BF39" Ref="J106"  Part="1" 
+F 0 "J106" H 3772 4577 50  0000 R CNN
+F 1 "Conn_01x01_Male" V 3951 4640 50  0001 L CNN
+F 2 "connectors:pad_circ_0.6mm" H 3800 4600 50  0001 C CNN
+F 3 "~" H 3800 4600 50  0001 C CNN
+	1    3800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 5C86C009
+P 4000 4600
+F 0 "#PWR0138" H 4000 4350 50  0001 C CNN
+F 1 "GND" H 4005 4427 50  0001 C CNN
+F 2 "" H 4000 4600 50  0001 C CNN
+F 3 "" H 4000 4600 50  0001 C CNN
+	1    4000 4600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
